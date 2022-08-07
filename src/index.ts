@@ -1,6 +1,6 @@
 import "module-alias/register";
 import "source-map-support/register";
-import app from "./app.jsx";
+import app from "./app";
 import config from "./config";
 
 app.listen(config.PORT, () => {
