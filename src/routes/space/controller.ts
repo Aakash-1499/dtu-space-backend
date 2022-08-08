@@ -49,7 +49,6 @@ export const handleDeleteSpace = async (
 
 export const handleGetAllSpaces = async (req: Request, res: Response) => {
   const spaces = await prisma.space.findMany();
-
   return res.json({ data: spaces });
 };
 
